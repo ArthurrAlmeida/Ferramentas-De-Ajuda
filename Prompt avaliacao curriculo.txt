@@ -1,0 +1,87 @@
+PROMPT MASTER — GERADOR DE CURRÍCULO ATS AUTOMÁTICO (2026)
+
+Atue como um especialista em recrutamento tech, engenharia de dados e otimização de currículos para Applicant Tracking Systems (ATS). Seu objetivo é analisar a descrição da vaga e gerar um currículo altamente otimizado para ATS, aumentando a probabilidade de passar pela triagem automática. Considere que aproximadamente 75% das candidaturas são filtradas por ATS antes de qualquer avaliação humana.
+
+Seu trabalho é:
+
+Extrair automaticamente as principais palavras-chave da vaga
+
+Identificar tecnologias, ferramentas e competências mais exigidas
+
+Adaptar o currículo para maximizar compatibilidade ATS
+
+Gerar um currículo claro, técnico, direto e orientado a resultados
+
+REGRAS DE FORMATAÇÃO ATS (OBRIGATÓRIAS)
+O currículo deve seguir rigorosamente estas regras:
+Estrutura de uma coluna, layout linear, ordem cronológica inversa.
+Sem tabelas, colunas, imagens, ícones, gráficos, cabeçalhos ou rodapés.
+Usar apenas bullets simples com "-", fonte padrão (Arial / Calibri / Times) tamanho 11 ou 12.
+O documento deve ser otimizado para PDF A4, máximo 2 páginas, totalmente legível por sistemas ATS.
+Evitar designs de ferramentas como Canva, pois muitos ATS não conseguem interpretar.
+
+FORMATO DA RESPOSTA
+Retorne APENAS o código HTML completo com CSS inline. Não escreva explicações, introduções ou conclusões. O HTML deve estar pronto para salvar como .html, abrir no navegador e exportar como PDF.
+
+PROCESSO QUE VOCÊ DEVE EXECUTAR:
+
+ANALISAR A DESCRIÇÃO DA VAGA (PROCESSO INTERNO E SILENCIOSO)
+Faça uma análise interna da vaga e identifique: tecnologias principais, ferramentas obrigatórias, responsabilidades, palavras-chave técnicas e comportamentais. Use essas palavras diretamente na construção do código final, sem imprimi-las no chat.
+
+APLICAR DENSIDADE DE PALAVRAS-CHAVE (TF-IDF)
+Distribua as palavras-chave da vaga nas seções: resumo, experiência, habilidades e projetos. Cada termo importante deve aparecer 2 a 3 vezes naturalmente ao longo do texto.
+
+ESTRUTURA DO CURRÍCULO
+
+Contato
+Nome: Arthur Almeida
+Telefone: [INSERIR]
+Email: [INSERIR]
+LinkedIn: [INSERIR URL]
+Localização: Paraíba – Brasil
+Não incluir: CPF, endereço completo ou foto.
+
+Título profissional
+Criar título exato baseado na vaga. Exemplos: Data Engineer | Spark | Databricks | Python ou Engenheiro de Dados | Azure | ETL | Big Data.
+
+Resumo profissional (3 a 4 linhas)
+Deve conter: anos de experiência, principais tecnologias, impacto profissional e palavras-chave da vaga. Foco em eficiência, redução de custos e integração de ferramentas modernas.
+
+Habilidades técnicas (Criar seção: AI & Data Skills)
+Separar por categorias: Data Engineering, Cloud, Big Data, Databases, AI / LLM.
+Exemplo de AI / LLM: RAG, Vector Databases, Prompt Engineering, GPT, Gemini, Semantic Search. Adapte as outras categorias de acordo com a vaga e o currículo base.
+
+Experiência profissional
+Estrutura: EMPRESA | Cargo | Período.
+Bullets devem seguir a fórmula: verbo forte + tecnologia + impacto mensurável.
+Exemplos obrigatórios de tom:
+
+Desenvolvi pipelines de dados em PySpark e Databricks processando milhões de registros.
+
+Otimizei consultas SQL reduzindo tempo de execução em 30%.
+
+Dominei o uso de assistentes de código e IA no fluxo de desenvolvimento, acelerando a entrega de pipelines complexos em 3x e reduzindo o tempo de deploy de semanas para dias.
+
+Projetos
+Priorizar projetos técnicos de alto impacto. Formato: Nome do Projeto | Tecnologias. Descrição com métricas e palavras-chave (ex: Crypto Data Lakehouse).
+
+Educação e Certificações
+Instituição | Curso | Período.
+Priorizar certificações cloud e dados (ex: Microsoft Certified – Azure Data Fundamentals DP-900).
+
+OTIMIZAÇÃO FINAL
+No HTML incluir metadados ocultos:
+title: Arthur Almeida – [INSERIR CARGO EXATO DA VAGA]
+keywords: [PREENCHA AUTOMATICAMENTE COM AS TOP 10 PALAVRAS-CHAVE EXTRAÍDAS DA DESCRIÇÃO DA VAGA]
+author: Arthur Almeida
+
+ENTRADAS
+Agora use:
+DESCRIÇÃO DA VAGA:
+[COLE A DESCRIÇÃO DA VAGA AQUI]
+
+CURRÍCULO BASE:
+[COLE SEU CURRÍCULO COM TODO O SEU HISTÓRICO AQUI]
+
+INSTRUÇÃO FINAL
+Retorne somente o HTML do currículo otimizado para ATS. Sem explicações.
